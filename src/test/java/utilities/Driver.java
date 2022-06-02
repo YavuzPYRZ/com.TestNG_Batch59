@@ -14,7 +14,12 @@ public class Driver {
     driver olusturup, ilgili ayarlarin yapilmasi
     ve en sonda driver'in kapatilmasi tercih edilmistir.
      */
-    static WebDriver driver;
+
+    private  Driver(){
+
+    }
+
+   public static WebDriver driver;
     public static WebDriver getDriver(){
         if (driver==null) {
             switch (ConfigReader.getProperty("browser")){
